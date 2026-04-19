@@ -87,16 +87,5 @@ Because of this, if a jammer disconnects them from the base, the swarm logic tak
 * **Smart Cities & Agriculture**: Remote crop monitoring and urban grid monitoring without relying on massive bandwidth or permanent internet infrastructure.
 
 ---
-
-## 🗓️ 10-Day Implementation Overview
-
-KAAL is built modularly with parallel rapid execution in mind:
-
-1. **Phase 1 (Days 1-2)**: Train YOLOv8 against baseline military datasets and write the PGD adversarial patch attack script for stress-testing. Integrate PyBullet for physics.
-2. **Phase 2 (Days 3-4)**: Construct the dual-stream FFT anomaly detector and train the MAPPO localized routing logic for a 10-agent flock. 
-3. **Phase 3 (Days 5-6)**: Combine pipeline. Inject adversarial inputs into the swarm agent's operational visual feed to verify structural resilience. Bring online the React visualization panel.
-4. **Phase 4 (Days 7-10)**: Hardware integration (Raspberry Pi inferencing) + breaking the system intentionally to polish the failsafes. Final dry runs across live camera feeds.
-
----
 *“KAAL is a swarm intelligence system where the drones share the instincts of a flock of birds and the paranoia of a soldier — they need no signal to coordinate, and they trust nothing their cameras show them.”*
 "# KAAL" 
