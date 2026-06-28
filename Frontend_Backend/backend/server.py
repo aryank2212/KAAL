@@ -21,7 +21,8 @@ app.add_middleware(
 )
 
 # 1. Load the model
-model_path = r"D:\Github\Hackathons\KAAL\MODEL\yolov8m.pt"
+import os
+model_path = os.path.join(os.path.dirname(__file__), "..", "..", "MODEL", "yolov8m.pt")
 print(f"Loading YOLO model: {model_path}")
 model = YOLO(model_path)
 

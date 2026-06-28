@@ -86,5 +86,49 @@ Because of this, if a jammer disconnects them from the base, the swarm logic tak
 * **Civilian Disaster Response**: Swarms dynamically sweeping through earthquake rubble without needing satellite connectivity beneath concrete.
 * **Smart Cities & Agriculture**: Remote crop monitoring and urban grid monitoring without relying on massive bandwidth or permanent internet infrastructure.
 ---
+
+## 🛠️ Installation & Setup Guide
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/aryank2212/KAAL.git
+cd KAAL
+```
+
+### 2. Backend Setup (Python API & YOLO Inference)
+The backend uses FastAPI and runs the YOLOv8 model for inference.
+```bash
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+
+# Activate the virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Install the required dependencies
+pip install -r MODEL/requirements.txt
+pip install fastapi uvicorn  # Extra requirements for the API server
+
+# Run the backend server
+cd Frontend_Backend/backend
+python server.py
+```
+*The backend server will start running on `http://localhost:3000`.*
+
+### 3. Frontend Setup (React Dashboard)
+The frontend dashboard visualizes the swarm status and adversarial alerts. Open a **new terminal window** and run:
+```bash
+cd Frontend_Backend/dashboard-app
+
+# Install Node.js dependencies
+npm install
+
+# Start the Vite development server
+npm run dev
+```
+*The frontend will typically run on `http://localhost:5173`. Open this URL in your browser to view the KAAL Control Dashboard!*
+
+---
 *“KAAL is a swarm intelligence system where the drones share the instincts of a flock of birds and the paranoia of a soldier — they need no signal to coordinate, and they trust nothing their cameras show them.”*
-"# KAAL" 
