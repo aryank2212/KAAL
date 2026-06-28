@@ -1,0 +1,27 @@
+/* App-level overrides and component-specific styles */
+
+/* Ensure recharts tooltips match theme */
+.recharts-tooltip-wrapper {
+  z-index: 10;
+}
+
+.recharts-default-tooltip {
+  border-radius: 8px !important;
+}
+
+/* Ensure glass panels don't fight with hover shadows */
+.glass {
+  will-change: transform;
+}
+
+/* Smooth transitions for all interactive elements */
+button, select, a {
+  transition: all 0.2s ease;
+}
+
+/* Custom focus ring */
+button:focus-visible,
+select:focus-visible {
+  outline: 1px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}

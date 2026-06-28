@@ -1,0 +1,32 @@
+
+    ROBUSTNESS EVALUATION REPORT (CUSTOM DATASET)
+    =============================================
+    Model: runs/detect/runs/robustness/adv_training_run3/weights/best.pt
+    Dataset: Datasets/military-artillery-and-tanks/2nd part int/2nd part int
+    
+    Summary Statistics:
+    -------------------
+    Total Images Tested:      2522
+    Total Ground Truth Boxes: 10876
+    Total Model Detections:   44105
+    
+    Accuracy (IOU > 0.5):
+    ---------------------
+    Objects correctly localized: 2977
+    Objects missed (FN):         7899
+    Localization Success Rate:   27.37%
+    
+    Model Class Distribution (What the model 'thinks' they are):
+    ----------------------------------------------------------
+        - A10: 44105
+
+    Ground Truth Class Distribution (What they actually are):
+    ------------------------------------------------------
+    - Artillery: 3607
+    - Tank: 3482
+    - Helicopter: 1234
+    - IFV: 1040
+    - Engineering vehicle: 743
+    - Soldiers: 421
+    - AIRPLANE: 222
+    - APC: 127

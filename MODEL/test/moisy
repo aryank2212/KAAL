@@ -1,0 +1,6 @@
+def occlude(image):
+    h, w, _ = image.shape
+    x1, y1 = np.random.randint(0, w//2), np.random.randint(0, h//2)
+    x2, y2 = x1 + 100, y1 + 100
+    image[y1:y2, x1:x2] = 0
+    return image

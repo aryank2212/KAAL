@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# PyTorch & Model Files
+*.pt
+*.pth
+*.pkl
+*.h5
+*.weights
+*.onnx
+runs/
+wandb/
+
+# Keep only essential model files (you can adjust this)
+!MODEL/kaal_eye_v2.pt
+!MODEL/yolo*.pt
+
+# YOLO specific
+yolov5/
+yolov8/
+datasets/
+*.cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node.js & Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+*.bak
+
+# Video and large media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Keep example videos if needed (uncomment to keep specific files)
+# !example_output.mp4
+
+# Processed outputs
+Processed_Outputs/
+output/
+temp/
+tmp/
+
+# Test artifacts
+test_output/
+*.test
+
+# AirSim specific
+AirSim_Environment/Blocks/
+
+# Git
+.git/
+*.orig
